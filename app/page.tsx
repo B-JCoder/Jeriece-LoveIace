@@ -92,9 +92,9 @@ export default function HomePage() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-balance bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 bg-clip-text text-transparent animate-fade-in">
             Jeriece LoveIace, PMHNP-BC
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-balance animate-fade-in-delay" style={{ color: "#D8AFE7" }}>
+          <p className="text-xl md:text-2xl mb-8 text-balance animate-fade-in-delay" style={{ color: "#000" }}>
             <Sparkles
-              className="inline h-6 w-6 mr-2 text-purple-400 animate-spin"
+              className="inline h-6 w-6 mr-2 text-black animate-spin"
               style={{ animationDuration: "3s" }}
             />
             Board-Certified Psychiatric Mental Health Nurse Practitioner
@@ -180,13 +180,13 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <p className="text-lg md:text-xl leading-relaxed mb-6 text-balance" style={{ color: "#D8AFE7" }}>
+              <p className="text-lg md:text-xl leading-relaxed mb-6 text-balance" style={{ color: "#000" }}>
                 You don't have to go through life's challenges alone. As a Board-Certified Psychiatric Mental Health
                 Nurse Practitioner (PMHNP-BC), I specialize in providing compassionate, evidence-based care for
                 individuals struggling with anxiety, depression, ADHD, trauma, bipolar disorder, PTSD, substance abuse,
                 and other mental health concerns.
               </p>
-              <p className="text-lg md:text-xl leading-relaxed text-balance" style={{ color: "#D8AFE7" }}>
+              <p className="text-lg md:text-xl leading-relaxed text-balance" style={{ color: "#000" }}>
                 My goal is to create a safe, nonjudgmental space where you feel heard, supported, and empowered on your
                 journey to healing and recovery. With over 8 years of psychiatric nursing experience, I am skilled in
                 both medication management and psychotherapy, tailoring treatment plans to meet each client's unique
@@ -202,7 +202,7 @@ export default function HomePage() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
             Comprehensive Mental Health Services
           </h2>
-          <p className="text-center text-lg mb-12 max-w-3xl mx-auto" style={{ color: "#D8AFE7" }}>
+          <p className="text-center text-lg mb-12 max-w-3xl mx-auto" style={{ color: "#000" }}>
             Specialized care for individuals, families, and communities across all ages and backgrounds
           </p>
 
@@ -238,7 +238,7 @@ export default function HomePage() {
                       className="flex items-center gap-2 hover:translate-x-2 transition-transform duration-200"
                     >
                       <CheckCircle className="h-4 w-4 text-purple-500 flex-shrink-0" />
-                      <span className="text-sm" style={{ color: "#D8AFE7" }}>
+                      <span className="text-sm" style={{ color: "#000" }}>
                         {condition}
                       </span>
                     </li>
@@ -277,7 +277,7 @@ export default function HomePage() {
                       className="flex items-center gap-2 hover:translate-x-2 transition-transform duration-200"
                     >
                       <CheckCircle className="h-4 w-4 text-purple-500 flex-shrink-0" />
-                      <span className="text-sm" style={{ color: "#D8AFE7" }}>
+                      <span className="text-sm" style={{ color: "#000" }}>
                         {service}
                       </span>
                     </li>
@@ -316,7 +316,7 @@ export default function HomePage() {
                       className="flex items-center gap-2 hover:translate-x-2 transition-transform duration-200"
                     >
                       <CheckCircle className="h-4 w-4 text-purple-500 flex-shrink-0" />
-                      <span className="text-sm" style={{ color: "#D8AFE7" }}>
+                      <span className="text-sm" style={{ color: "#000" }}>
                         {population}
                       </span>
                     </li>
@@ -358,7 +358,7 @@ export default function HomePage() {
                         className="h-5 w-5 mt-0.5 flex-shrink-0 group-hover/item:scale-110 transition-transform duration-200"
                         style={{ color: "#A36ACB" }}
                       />
-                      <span style={{ color: "#D8AFE7" }}>{item}</span>
+                      <span style={{ color: "#000" }}>{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -394,7 +394,7 @@ export default function HomePage() {
                         className="h-5 w-5 mt-0.5 flex-shrink-0 group-hover/item:scale-110 transition-transform duration-200"
                         style={{ color: "#A36ACB" }}
                       />
-                      <span style={{ color: "#D8AFE7" }}>{item}</span>
+                      <span style={{ color: "#000" }}>{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -409,7 +409,7 @@ export default function HomePage() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
             Transparent Pricing & Plans
           </h2>
-          <p className="text-center text-lg mb-12 max-w-2xl mx-auto" style={{ color: "#D8AFE7" }}>
+          <p className="text-center text-lg mb-12 max-w-2xl mx-auto" style={{ color: "#000" }}>
             Clear, upfront pricing with flexible payment options to make quality mental healthcare accessible
           </p>
 
@@ -430,7 +430,7 @@ export default function HomePage() {
                 <div className="text-4xl font-bold bg-gradient-to-r from-purple-500 to-purple-600 bg-clip-text text-transparent">
                   $175
                 </div>
-                <p className="text-sm mt-2" style={{ color: "#D8AFE7" }}>
+                <p className="text-sm mt-2" style={{ color: "#000" }}>
                   Comprehensive 90-minute evaluation
                 </p>
               </CardHeader>
@@ -446,7 +446,7 @@ export default function HomePage() {
                   ].map((item, index) => (
                     <li key={index} className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-purple-500 flex-shrink-0" />
-                      <span className="text-sm" style={{ color: "#D8AFE7" }}>
+                      <span className="text-sm" style={{ color: "#000" }}>
                         {item}
                       </span>
                     </li>
@@ -480,7 +480,7 @@ export default function HomePage() {
                 <div className="text-4xl font-bold bg-gradient-to-r from-purple-500 to-purple-600 bg-clip-text text-transparent">
                   $90
                 </div>
-                <p className="text-sm mt-2" style={{ color: "#D8AFE7" }}>
+                <p className="text-sm mt-2" style={{ color: "#000" }}>
                   Standard 45-60 minute sessions
                 </p>
               </CardHeader>
@@ -498,7 +498,7 @@ export default function HomePage() {
                   ].map((item, index) => (
                     <li key={index} className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-purple-500 flex-shrink-0" />
-                      <span className="text-sm" style={{ color: "#D8AFE7" }}>
+                      <span className="text-sm" style={{ color: "#000" }}>
                         {item}
                       </span>
                     </li>
@@ -520,7 +520,7 @@ export default function HomePage() {
                 <CardTitle className="text-xl mb-2" style={{ color: "#A36ACB" }}>
                   Payment Options
                 </CardTitle>
-                <p className="text-sm" style={{ color: "#D8AFE7" }}>
+                <p className="text-sm" style={{ color: "#000" }}>
                   Flexible payment methods accepted
                 </p>
               </CardHeader>
@@ -532,7 +532,7 @@ export default function HomePage() {
                       className="flex items-center gap-3 p-3 bg-gradient-to-r from-purple-50/30 to-purple-100/30 rounded-lg hover:scale-105 transition-transform duration-200"
                     >
                       <CheckCircle className="h-5 w-5 text-purple-500" />
-                      <span className="font-medium" style={{ color: "#D8AFE7" }}>
+                      <span className="font-medium" style={{ color: "#000" }}>
                         {method}
                       </span>
                     </div>
@@ -542,7 +542,7 @@ export default function HomePage() {
                   <p className="text-sm font-medium mb-2" style={{ color: "#A36ACB" }}>
                     Insurance & Billing:
                   </p>
-                  <p className="text-xs" style={{ color: "#D8AFE7" }}>
+                  <p className="text-xs" style={{ color: "#000" }}>
                     Self-pay practice. Superbills provided for insurance reimbursement. Payment plans available upon
                     request.
                   </p>
@@ -572,7 +572,7 @@ export default function HomePage() {
                   <div className="group">
                     <label
                       className="block text-sm font-medium mb-2 group-focus-within:text-purple-600 transition-colors"
-                      style={{ color: "#D8AFE7" }}
+                      style={{ color: "#000" }}
                     >
                       First Name
                     </label>
@@ -584,7 +584,7 @@ export default function HomePage() {
                   <div className="group">
                     <label
                       className="block text-sm font-medium mb-2 group-focus-within:text-purple-600 transition-colors"
-                      style={{ color: "#D8AFE7" }}
+                      style={{ color: "#000" }}
                     >
                       Last Name
                     </label>
@@ -597,7 +597,7 @@ export default function HomePage() {
                 <div className="group">
                   <label
                     className="block text-sm font-medium mb-2 group-focus-within:text-purple-600 transition-colors"
-                    style={{ color: "#D8AFE7" }}
+                    style={{ color: "#000" }}
                   >
                     Email
                   </label>
@@ -610,7 +610,7 @@ export default function HomePage() {
                 <div className="group">
                   <label
                     className="block text-sm font-medium mb-2 group-focus-within:text-purple-600 transition-colors"
-                    style={{ color: "#D8AFE7" }}
+                    style={{ color: "#000" }}
                   >
                     Phone
                   </label>
@@ -624,7 +624,7 @@ export default function HomePage() {
                   <div className="group">
                     <label
                       className="block text-sm font-medium mb-2 group-focus-within:text-purple-600 transition-colors"
-                      style={{ color: "#D8AFE7" }}
+                      style={{ color: "#000" }}
                     >
                       <Calendar className="inline h-4 w-4 mr-1" />
                       Preferred Date
@@ -638,7 +638,7 @@ export default function HomePage() {
                   <div className="group">
                     <label
                       className="block text-sm font-medium mb-2 group-focus-within:text-purple-600 transition-colors"
-                      style={{ color: "#D8AFE7" }}
+                      style={{ color: "#000" }}
                     >
                       <Clock className="inline h-4 w-4 mr-1" />
                       Preferred Time
@@ -653,7 +653,7 @@ export default function HomePage() {
                 <div className="group">
                   <label
                     className="block text-sm font-medium mb-2 group-focus-within:text-purple-600 transition-colors"
-                    style={{ color: "#D8AFE7" }}
+                    style={{ color: "#000" }}
                   >
                     Message
                   </label>
@@ -684,7 +684,7 @@ export default function HomePage() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
             Client Success Stories
           </h2>
-          <p className="text-center text-lg mb-12 max-w-2xl mx-auto" style={{ color: "#D8AFE7" }}>
+          <p className="text-center text-lg mb-12 max-w-2xl mx-auto" style={{ color: "#000" }}>
             Real experiences from individuals who found healing and hope through compassionate care
           </p>
 
@@ -725,7 +725,7 @@ export default function HomePage() {
                       />
                     ))}
                   </div>
-                  <blockquote className="text-lg mb-6 italic relative leading-relaxed" style={{ color: "#D8AFE7" }}>
+                  <blockquote className="text-lg mb-6 italic relative leading-relaxed" style={{ color: "#000" }}>
                     <span className="text-4xl text-purple-300 absolute -top-2 -left-2">"</span>
                     {testimonial.text}
                     <span className="text-4xl text-purple-300 absolute -bottom-4 -right-2">"</span>
@@ -739,7 +739,7 @@ export default function HomePage() {
                         <p className="font-semibold" style={{ color: "#A36ACB" }}>
                           {testimonial.author}
                         </p>
-                        <p className="text-sm opacity-75" style={{ color: "#D8AFE7" }}>
+                        <p className="text-sm opacity-75" style={{ color: "#000" }}>
                           {testimonial.condition}
                         </p>
                       </div>
@@ -765,7 +765,7 @@ export default function HomePage() {
                 <div className="text-3xl font-bold bg-gradient-to-r from-purple-500 to-purple-600 bg-clip-text text-transparent mb-2">
                   {stat.number}
                 </div>
-                <p className="text-sm font-medium" style={{ color: "#D8AFE7" }}>
+                <p className="text-sm font-medium" style={{ color: "#000" }}>
                   {stat.label}
                 </p>
               </div>
@@ -779,7 +779,7 @@ export default function HomePage() {
           <h2 className="text-2xl md:text-3xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
             Stay Connected
           </h2>
-          <p className="text-lg mb-8" style={{ color: "#D8AFE7" }}>
+          <p className="text-lg mb-8" style={{ color: "#000" }}>
             Follow for mental health tips, resources, and community support
           </p>
 
@@ -808,11 +808,11 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <div className="flex items-center gap-2">
               <MapPin className="h-5 w-5" style={{ color: "#A36ACB" }} />
-              <span style={{ color: "#D8AFE7" }}>Serving Florida & Telehealth Nationwide</span>
+              <span style={{ color: "#000" }}>Serving Florida & Telehealth Nationwide</span>
             </div>
             <div className="flex items-center gap-2">
               <Globe className="h-5 w-5" style={{ color: "#A36ACB" }} />
-              <span style={{ color: "#D8AFE7" }}>Secure Telehealth Platform</span>
+              <span style={{ color: "#000" }}>Secure Telehealth Platform</span>
             </div>
           </div>
         </div>
@@ -825,7 +825,7 @@ export default function HomePage() {
           <h3 className="text-2xl md:text-3xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
             Jeriece LoveIace, PMHNP-BC
           </h3>
-          <p className="mb-6 text-lg" style={{ color: "#D8AFE7" }}>
+          <p className="mb-6 text-lg" style={{ color: "#000" }}>
             Board-Certified Psychiatric Mental Health Nurse Practitioner
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
@@ -833,7 +833,7 @@ export default function HomePage() {
               <div className="p-2 bg-purple-100 rounded-full group-hover:bg-purple-200 transition-colors">
                 <Phone className="h-5 w-5" style={{ color: "#A36ACB" }} />
               </div>
-              <span className="font-medium" style={{ color: "#D8AFE7" }}>
+              <span className="font-medium" style={{ color: "#000" }}>
                 (772) 272-1699
               </span>
             </div>
@@ -841,12 +841,12 @@ export default function HomePage() {
               <div className="p-2 bg-purple-100 rounded-full group-hover:bg-purple-200 transition-colors">
                 <Heart className="h-5 w-5" style={{ color: "#A36ACB" }} />
               </div>
-              <span className="font-medium" style={{ color: "#D8AFE7" }}>
+              <span className="font-medium" style={{ color: "#000" }}>
                 Free 15-minute consultation
               </span>
             </div>
           </div>
-          <p className="text-sm opacity-75" style={{ color: "#D8AFE7" }}>
+          <p className="text-sm opacity-75" style={{ color: "#000" }}>
             © 2024 Jeriece LoveIace, PMHNP-BC. All rights reserved.
           </p>
         </div>
@@ -892,3 +892,4 @@ export default function HomePage() {
     </div>
   )
 }
+  
