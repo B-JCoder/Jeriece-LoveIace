@@ -847,7 +847,7 @@ export default function HomePage() {
             </div>
           </div>
           <p className="text-sm opacity-75" style={{ color: "#000" }}>
-            © 2024 Jeriece LoveIace, PMHNP-BC. All rights reserved.
+            © 2025 Jeriece LoveIace, PMHNP-BC. All rights reserved.
           </p>
         </div>
       </footer>
@@ -892,4 +892,3 @@ export default function HomePage() {
     </div>
   )
 }
-  
