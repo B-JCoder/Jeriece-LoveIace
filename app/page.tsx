@@ -614,9 +614,9 @@ export default function HomePage() {
               style={{ backgroundColor: "rgba(250, 249, 246, 0.9)" }}
             >
               <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-purple-500 to-purple-700" />
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-purple-500 to-purple-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
-                Most Popular
-              </div>
+              <div className="absolute top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-purple-500 to-purple-600 text-white px-4 py-1 rounded-full text-sm font-semibold shadow-md">
+      Most Popular
+    </div>
               <CardHeader className="relative text-center pt-8">
                 <div className="mx-auto mb-4 p-4 bg-purple-100 rounded-full w-fit">
                   <MessageCircle className="h-8 w-8 text-purple-600" />
@@ -884,25 +884,29 @@ export default function HomePage() {
           </div>
 
           {/* Trust Indicators */}
-          <div className="grid md:grid-cols-4 gap-6 text-center">
-            {[
-              { icon: Award, number: "8+", label: "Years Experience" },
-              { icon: Star, number: "4.9", label: "Average Rating" },
-              { icon: Heart, number: "95%", label: "Client Satisfaction" },
-            ].map((stat, index) => (
-              <div key={index} className="group hover:scale-110 transition-transform duration-300">
-                <div className="mx-auto mb-4 p-4 bg-purple-100 rounded-full w-fit group-hover:bg-purple-200 transition-colors">
-                  <stat.icon className="h-8 w-8 text-purple-600" />
-                </div>
-                <div className="text-3xl font-bold bg-gradient-to-r from-purple-500 to-purple-600 bg-clip-text text-transparent mb-2">
-                  {stat.number}
-                </div>
-                <p className="text-sm font-medium" style={{ color: "#000" }}>
-                  {stat.label}
-                </p>
-              </div>
-            ))}
-          </div>
+         <div className="w-full flex justify-center">
+  <div className="flex flex-col sm:flex-row justify-center items-center gap-30 text-center">
+    {[
+      { icon: Award, number: "8+", label: "Years Experience" },
+      { icon: Star, number: "4.9", label: "Average Rating" },
+      { icon: Heart, number: "95%", label: "Client Satisfaction" },
+    ].map((stat, index) => (
+      <div
+        key={index}
+        className="group hover:scale-110 transition-transform duration-300 flex flex-col items-center"
+      >
+        <div className="mb-4 p-5 bg-purple-100 rounded-full w-fit group-hover:bg-purple-200 transition-colors">
+          <stat.icon className="h-10 w-10 text-purple-600" />
+        </div>
+        <div className="text-3xl font-bold bg-gradient-to-r from-purple-500 to-purple-600 bg-clip-text text-transparent mb-1">
+          {stat.number}
+        </div>
+        <p className="text-sm font-medium text-gray-700">{stat.label}</p>
+      </div>
+    ))}
+  </div>
+</div>
+
         </div>
       </section>
 
