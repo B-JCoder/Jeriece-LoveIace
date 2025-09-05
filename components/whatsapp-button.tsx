@@ -1,11 +1,11 @@
 "use client"
 
 export default function WhatsAppButton() {
-  const phoneNumber = "+1 (786) 853-2864"
+  const phoneNumber = "17868532864" 
   const message = "Hello! I'm interested in learning more about your mental health services."
 
   const handleWhatsAppClick = () => {
-    const url = `https://wa.me/${phoneNumber.replace("+", "")}?text=${encodeURIComponent(message)}`
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
     window.open(url, "_blank")
   }
 
