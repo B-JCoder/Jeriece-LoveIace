@@ -326,7 +326,7 @@ export default function HomePage() {
 
             <div className="relative group overflow-hidden rounded-xl shadow-lg">
               <Image
-                src="/images/ps.jpg"
+                src="/images/PS.jpg"
                 alt="Community support"
                 width={400}
                 height={300}
