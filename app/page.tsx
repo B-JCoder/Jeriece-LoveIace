@@ -26,10 +26,14 @@ import {
   Twitter,
   MapPin,
   Globe,
+  Zap,
+  CloudRain,
+  Pill,
 } from "lucide-react"
 import Image from "next/image"
 import { Navigation } from "@/components/navigation"
 import { useState, useEffect } from "react"
+import WhatsAppButton from "@/components/whatsapp-button"
 
 export default function HomePage() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
@@ -92,9 +96,9 @@ export default function HomePage() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-balance bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 bg-clip-text text-transparent animate-fade-in">
             Jeriece LoveIace, PMHNP-BC
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-balance animate-fade-in-delay" style={{ color: "#000" }}>
+          <p className="text-xl md:text-2xl mb-8 text-balance animate-fade-in-delay" style={{ color: "#D8AFE7" }}>
             <Sparkles
-              className="inline h-6 w-6 mr-2 text-black animate-spin"
+              className="inline h-6 w-6 mr-2 text-purple-400 animate-spin"
               style={{ animationDuration: "3s" }}
             />
             Board-Certified Psychiatric Mental Health Nurse Practitioner
@@ -108,6 +112,64 @@ export default function HomePage() {
               personalized treatment plans that blend medication management and psychotherapy—because your mental health
               deserves expert, caring attention.
             </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8 max-w-4xl mx-auto">
+            <div className="group bg-gradient-to-br from-purple-50/80 to-purple-100/80 backdrop-blur-sm rounded-2xl p-6 border border-purple-200/50 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+              <div className="flex flex-col items-center text-center">
+                <div className="mb-4 p-4 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full shadow-lg group-hover:shadow-xl transition-all duration-300">
+                  <Zap className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="font-bold text-lg mb-2" style={{ color: "#A36ACB" }}>
+                  Anxiety
+                </h3>
+                <p className="text-sm" style={{ color: "#D8AFE7" }}>
+                  Comprehensive anxiety disorder treatment
+                </p>
+              </div>
+            </div>
+
+            <div className="group bg-gradient-to-br from-purple-50/80 to-purple-100/80 backdrop-blur-sm rounded-2xl p-6 border border-purple-200/50 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+              <div className="flex flex-col items-center text-center">
+                <div className="mb-4 p-4 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full shadow-lg group-hover:shadow-xl transition-all duration-300">
+                  <CloudRain className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="font-bold text-lg mb-2" style={{ color: "#A36ACB" }}>
+                  Depression
+                </h3>
+                <p className="text-sm" style={{ color: "#D8AFE7" }}>
+                  Evidence-based depression care
+                </p>
+              </div>
+            </div>
+
+            <div className="group bg-gradient-to-br from-purple-50/80 to-purple-100/80 backdrop-blur-sm rounded-2xl p-6 border border-purple-200/50 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+              <div className="flex flex-col items-center text-center">
+                <div className="mb-4 p-4 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full shadow-lg group-hover:shadow-xl transition-all duration-300">
+                  <Brain className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="font-bold text-lg mb-2" style={{ color: "#A36ACB" }}>
+                  Mental Health
+                </h3>
+                <p className="text-sm" style={{ color: "#D8AFE7" }}>
+                  Holistic mental wellness approach
+                </p>
+              </div>
+            </div>
+
+            <div className="group bg-gradient-to-br from-purple-50/80 to-purple-100/80 backdrop-blur-sm rounded-2xl p-6 border border-purple-200/50 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+              <div className="flex flex-col items-center text-center">
+                <div className="mb-4 p-4 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full shadow-lg group-hover:shadow-xl transition-all duration-300">
+                  <Pill className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="font-bold text-lg mb-2" style={{ color: "#A36ACB" }}>
+                  Medication Management
+                </h3>
+                <p className="text-sm" style={{ color: "#D8AFE7" }}>
+                  Expert psychiatric medication care
+                </p>
+              </div>
+            </div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -157,6 +219,31 @@ export default function HomePage() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
             About Me
           </h2>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="relative group overflow-hidden rounded-xl shadow-xl">
+              <Image
+                src="/images/about1.jpg"
+                alt="Professional therapy session environment"
+                width={600}
+                height={400}
+                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-purple-900/30 to-transparent" />
+            </div>
+
+            <div className="relative group overflow-hidden rounded-xl shadow-xl">
+              <Image
+                src="/images/about2.jpg"
+                alt="Mental health awareness"
+                width={600}
+                height={400}
+                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-purple-900/30 to-transparent" />
+            </div>
+          </div>
+
           <Card
             className="shadow-2xl hover:shadow-3xl transition-all duration-500 border-0 relative overflow-hidden group"
             style={{ backgroundColor: "rgba(250, 249, 246, 0.8)", backdropFilter: "blur(10px)" }}
@@ -180,13 +267,13 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <p className="text-lg md:text-xl leading-relaxed mb-6 text-balance" style={{ color: "#000" }}>
+              <p className="text-lg md:text-xl leading-relaxed mb-6 text-balance" style={{ color: "#D8AFE7" }}>
                 You don't have to go through life's challenges alone. As a Board-Certified Psychiatric Mental Health
                 Nurse Practitioner (PMHNP-BC), I specialize in providing compassionate, evidence-based care for
                 individuals struggling with anxiety, depression, ADHD, trauma, bipolar disorder, PTSD, substance abuse,
                 and other mental health concerns.
               </p>
-              <p className="text-lg md:text-xl leading-relaxed text-balance" style={{ color: "#000" }}>
+              <p className="text-lg md:text-xl leading-relaxed text-balance" style={{ color: "#D8AFE7" }}>
                 My goal is to create a safe, nonjudgmental space where you feel heard, supported, and empowered on your
                 journey to healing and recovery. With over 8 years of psychiatric nursing experience, I am skilled in
                 both medication management and psychotherapy, tailoring treatment plans to meet each client's unique
@@ -202,9 +289,56 @@ export default function HomePage() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
             Comprehensive Mental Health Services
           </h2>
-          <p className="text-center text-lg mb-12 max-w-3xl mx-auto" style={{ color: "#000" }}>
+          <p className="text-center text-lg mb-12 max-w-3xl mx-auto" style={{ color: "#D8AFE7" }}>
             Specialized care for individuals, families, and communities across all ages and backgrounds
           </p>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <div className="relative group overflow-hidden rounded-xl shadow-lg">
+              <Image
+                src="/images/mhc.jpg"
+                alt="Brain health and wellness"
+                width={400}
+                height={300}
+                className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-purple-900/60 to-transparent" />
+              <div className="absolute bottom-4 left-4 text-white">
+                <h3 className="font-bold text-lg">Mental Health Conditions</h3>
+                <p className="text-sm opacity-90">Comprehensive treatment for various conditions</p>
+              </div>
+            </div>
+
+            <div className="relative group overflow-hidden rounded-xl shadow-lg">
+              <Image
+                src="/images/medi.jpg"
+                alt="Treatment services"
+                width={400}
+                height={300}
+                className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-purple-900/60 to-transparent" />
+              <div className="absolute bottom-4 left-4 text-white">
+                <h3 className="font-bold text-lg">Treatment Services</h3>
+                <p className="text-sm opacity-90">Evidence-based therapeutic approaches</p>
+              </div>
+            </div>
+
+            <div className="relative group overflow-hidden rounded-xl shadow-lg">
+              <Image
+                src="/images/ps.jpg"
+                alt="Community support"
+                width={400}
+                height={300}
+                className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-purple-900/60 to-transparent" />
+              <div className="absolute bottom-4 left-4 text-white">
+                <h3 className="font-bold text-lg">Populations Served</h3>
+                <p className="text-sm opacity-90">Inclusive care for all communities</p>
+              </div>
+            </div>
+          </div>
 
           {/* Service Categories Grid */}
           <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -238,7 +372,7 @@ export default function HomePage() {
                       className="flex items-center gap-2 hover:translate-x-2 transition-transform duration-200"
                     >
                       <CheckCircle className="h-4 w-4 text-purple-500 flex-shrink-0" />
-                      <span className="text-sm" style={{ color: "#000" }}>
+                      <span className="text-sm" style={{ color: "#D8AFE7" }}>
                         {condition}
                       </span>
                     </li>
@@ -277,7 +411,7 @@ export default function HomePage() {
                       className="flex items-center gap-2 hover:translate-x-2 transition-transform duration-200"
                     >
                       <CheckCircle className="h-4 w-4 text-purple-500 flex-shrink-0" />
-                      <span className="text-sm" style={{ color: "#000" }}>
+                      <span className="text-sm" style={{ color: "#D8AFE7" }}>
                         {service}
                       </span>
                     </li>
@@ -316,7 +450,7 @@ export default function HomePage() {
                       className="flex items-center gap-2 hover:translate-x-2 transition-transform duration-200"
                     >
                       <CheckCircle className="h-4 w-4 text-purple-500 flex-shrink-0" />
-                      <span className="text-sm" style={{ color: "#000" }}>
+                      <span className="text-sm" style={{ color: "#D8AFE7" }}>
                         {population}
                       </span>
                     </li>
@@ -358,7 +492,7 @@ export default function HomePage() {
                         className="h-5 w-5 mt-0.5 flex-shrink-0 group-hover/item:scale-110 transition-transform duration-200"
                         style={{ color: "#A36ACB" }}
                       />
-                      <span style={{ color: "#000" }}>{item}</span>
+                      <span style={{ color: "#D8AFE7" }}>{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -394,7 +528,7 @@ export default function HomePage() {
                         className="h-5 w-5 mt-0.5 flex-shrink-0 group-hover/item:scale-110 transition-transform duration-200"
                         style={{ color: "#A36ACB" }}
                       />
-                      <span style={{ color: "#000" }}>{item}</span>
+                      <span style={{ color: "#D8AFE7" }}>{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -409,11 +543,29 @@ export default function HomePage() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
             Transparent Pricing & Plans
           </h2>
-          <p className="text-center text-lg mb-12 max-w-2xl mx-auto" style={{ color: "#000" }}>
+          <p className="text-center text-lg mb-12 max-w-2xl mx-auto" style={{ color: "#D8AFE7" }}>
             Clear, upfront pricing with flexible payment options to make quality mental healthcare accessible
           </p>
 
+          <div className="mb-12">
+            <div className="relative group overflow-hidden rounded-2xl shadow-2xl max-w-4xl mx-auto">
+              <Image
+                src="/images/afordable.jpg"
+                alt="Professional consultation environment"
+                width={800}
+                height={300}
+                className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-purple-900/70 to-transparent" />
+              <div className="absolute bottom-6 left-6 text-white">
+                <h3 className="text-2xl font-bold mb-2">Affordable Mental Healthcare</h3>
+                <p className="text-lg opacity-90">Quality care with transparent pricing and flexible payment options</p>
+              </div>
+            </div>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-8">
+            {/* ... existing pricing cards code ... */}
             {/* Initial Consultation */}
             <Card
               className="shadow-2xl hover:shadow-3xl transition-all duration-500 border-0 group hover:scale-105 relative overflow-hidden"
@@ -428,9 +580,9 @@ export default function HomePage() {
                   Initial Consultation
                 </CardTitle>
                 <div className="text-4xl font-bold bg-gradient-to-r from-purple-500 to-purple-600 bg-clip-text text-transparent">
-                  $175
+                  60 Min
                 </div>
-                <p className="text-sm mt-2" style={{ color: "#000" }}>
+                <p className="text-sm mt-2" style={{ color: "#D8AFE7" }}>
                   Comprehensive 90-minute evaluation
                 </p>
               </CardHeader>
@@ -446,7 +598,7 @@ export default function HomePage() {
                   ].map((item, index) => (
                     <li key={index} className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-purple-500 flex-shrink-0" />
-                      <span className="text-sm" style={{ color: "#000" }}>
+                      <span className="text-sm" style={{ color: "#D8AFE7" }}>
                         {item}
                       </span>
                     </li>
@@ -478,9 +630,9 @@ export default function HomePage() {
                   Follow-up Sessions
                 </CardTitle>
                 <div className="text-4xl font-bold bg-gradient-to-r from-purple-500 to-purple-600 bg-clip-text text-transparent">
-                  $90
+                  15 - 30 Min
                 </div>
-                <p className="text-sm mt-2" style={{ color: "#000" }}>
+                <p className="text-sm mt-2" style={{ color: "#D8AFE7" }}>
                   Standard 45-60 minute sessions
                 </p>
               </CardHeader>
@@ -498,7 +650,7 @@ export default function HomePage() {
                   ].map((item, index) => (
                     <li key={index} className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-purple-500 flex-shrink-0" />
-                      <span className="text-sm" style={{ color: "#000" }}>
+                      <span className="text-sm" style={{ color: "#D8AFE7" }}>
                         {item}
                       </span>
                     </li>
@@ -520,7 +672,7 @@ export default function HomePage() {
                 <CardTitle className="text-xl mb-2" style={{ color: "#A36ACB" }}>
                   Payment Options
                 </CardTitle>
-                <p className="text-sm" style={{ color: "#000" }}>
+                <p className="text-sm" style={{ color: "#D8AFE7" }}>
                   Flexible payment methods accepted
                 </p>
               </CardHeader>
@@ -532,7 +684,7 @@ export default function HomePage() {
                       className="flex items-center gap-3 p-3 bg-gradient-to-r from-purple-50/30 to-purple-100/30 rounded-lg hover:scale-105 transition-transform duration-200"
                     >
                       <CheckCircle className="h-5 w-5 text-purple-500" />
-                      <span className="font-medium" style={{ color: "#000" }}>
+                      <span className="font-medium" style={{ color: "#D8AFE7" }}>
                         {method}
                       </span>
                     </div>
@@ -542,7 +694,7 @@ export default function HomePage() {
                   <p className="text-sm font-medium mb-2" style={{ color: "#A36ACB" }}>
                     Insurance & Billing:
                   </p>
-                  <p className="text-xs" style={{ color: "#000" }}>
+                  <p className="text-xs" style={{ color: "#D8AFE7" }}>
                     Self-pay practice. Superbills provided for insurance reimbursement. Payment plans available upon
                     request.
                   </p>
@@ -559,6 +711,9 @@ export default function HomePage() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
             Start Your Journey
           </h2>
+
+          
+
           <Card
             className="shadow-2xl hover:shadow-3xl transition-all duration-500 border-0 relative overflow-hidden"
             style={{ backgroundColor: "rgba(250, 249, 246, 0.95)", backdropFilter: "blur(10px)" }}
@@ -572,7 +727,7 @@ export default function HomePage() {
                   <div className="group">
                     <label
                       className="block text-sm font-medium mb-2 group-focus-within:text-purple-600 transition-colors"
-                      style={{ color: "#000" }}
+                      style={{ color: "#D8AFE7" }}
                     >
                       First Name
                     </label>
@@ -584,7 +739,7 @@ export default function HomePage() {
                   <div className="group">
                     <label
                       className="block text-sm font-medium mb-2 group-focus-within:text-purple-600 transition-colors"
-                      style={{ color: "#000" }}
+                      style={{ color: "#D8AFE7" }}
                     >
                       Last Name
                     </label>
@@ -597,7 +752,7 @@ export default function HomePage() {
                 <div className="group">
                   <label
                     className="block text-sm font-medium mb-2 group-focus-within:text-purple-600 transition-colors"
-                    style={{ color: "#000" }}
+                    style={{ color: "#D8AFE7" }}
                   >
                     Email
                   </label>
@@ -610,7 +765,7 @@ export default function HomePage() {
                 <div className="group">
                   <label
                     className="block text-sm font-medium mb-2 group-focus-within:text-purple-600 transition-colors"
-                    style={{ color: "#000" }}
+                    style={{ color: "#D8AFE7" }}
                   >
                     Phone
                   </label>
@@ -624,7 +779,7 @@ export default function HomePage() {
                   <div className="group">
                     <label
                       className="block text-sm font-medium mb-2 group-focus-within:text-purple-600 transition-colors"
-                      style={{ color: "#000" }}
+                      style={{ color: "#D8AFE7" }}
                     >
                       <Calendar className="inline h-4 w-4 mr-1" />
                       Preferred Date
@@ -638,7 +793,7 @@ export default function HomePage() {
                   <div className="group">
                     <label
                       className="block text-sm font-medium mb-2 group-focus-within:text-purple-600 transition-colors"
-                      style={{ color: "#000" }}
+                      style={{ color: "#D8AFE7" }}
                     >
                       <Clock className="inline h-4 w-4 mr-1" />
                       Preferred Time
@@ -653,7 +808,7 @@ export default function HomePage() {
                 <div className="group">
                   <label
                     className="block text-sm font-medium mb-2 group-focus-within:text-purple-600 transition-colors"
-                    style={{ color: "#000" }}
+                    style={{ color: "#D8AFE7" }}
                   >
                     Message
                   </label>
@@ -684,9 +839,11 @@ export default function HomePage() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
             Client Success Stories
           </h2>
-          <p className="text-center text-lg mb-12 max-w-2xl mx-auto" style={{ color: "#000" }}>
+          <p className="text-center text-lg mb-12 max-w-2xl mx-auto" style={{ color: "#D8AFE7" }}>
             Real experiences from individuals who found healing and hope through compassionate care
           </p>
+
+         
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {[
@@ -725,7 +882,7 @@ export default function HomePage() {
                       />
                     ))}
                   </div>
-                  <blockquote className="text-lg mb-6 italic relative leading-relaxed" style={{ color: "#000" }}>
+                  <blockquote className="text-lg mb-6 italic relative leading-relaxed" style={{ color: "#D8AFE7" }}>
                     <span className="text-4xl text-purple-300 absolute -top-2 -left-2">"</span>
                     {testimonial.text}
                     <span className="text-4xl text-purple-300 absolute -bottom-4 -right-2">"</span>
@@ -739,7 +896,7 @@ export default function HomePage() {
                         <p className="font-semibold" style={{ color: "#A36ACB" }}>
                           {testimonial.author}
                         </p>
-                        <p className="text-sm opacity-75" style={{ color: "#000" }}>
+                        <p className="text-sm opacity-75" style={{ color: "#D8AFE7" }}>
                           {testimonial.condition}
                         </p>
                       </div>
@@ -753,7 +910,7 @@ export default function HomePage() {
           {/* Trust Indicators */}
           <div className="grid md:grid-cols-4 gap-6 text-center">
             {[
-              { icon: Users, number: "500+", label: "Clients Helped" },
+              { icon: Users, number: "80+", label: "Clients Helped" },
               { icon: Award, number: "8+", label: "Years Experience" },
               { icon: Star, number: "4.9", label: "Average Rating" },
               { icon: Heart, number: "95%", label: "Client Satisfaction" },
@@ -765,7 +922,7 @@ export default function HomePage() {
                 <div className="text-3xl font-bold bg-gradient-to-r from-purple-500 to-purple-600 bg-clip-text text-transparent mb-2">
                   {stat.number}
                 </div>
-                <p className="text-sm font-medium" style={{ color: "#000" }}>
+                <p className="text-sm font-medium" style={{ color: "#D8AFE7" }}>
                   {stat.label}
                 </p>
               </div>
@@ -779,7 +936,7 @@ export default function HomePage() {
           <h2 className="text-2xl md:text-3xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
             Stay Connected
           </h2>
-          <p className="text-lg mb-8" style={{ color: "#000" }}>
+          <p className="text-lg mb-8" style={{ color: "#D8AFE7" }}>
             Follow for mental health tips, resources, and community support
           </p>
 
@@ -808,11 +965,11 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <div className="flex items-center gap-2">
               <MapPin className="h-5 w-5" style={{ color: "#A36ACB" }} />
-              <span style={{ color: "#000" }}>Serving Florida & Telehealth Nationwide</span>
+              <span style={{ color: "#D8AFE7" }}>Serving Florida & Telehealth Nationwide</span>
             </div>
             <div className="flex items-center gap-2">
               <Globe className="h-5 w-5" style={{ color: "#A36ACB" }} />
-              <span style={{ color: "#000" }}>Secure Telehealth Platform</span>
+              <span style={{ color: "#D8AFE7" }}>Secure Telehealth Platform</span>
             </div>
           </div>
         </div>
@@ -825,7 +982,7 @@ export default function HomePage() {
           <h3 className="text-2xl md:text-3xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
             Jeriece LoveIace, PMHNP-BC
           </h3>
-          <p className="mb-6 text-lg" style={{ color: "#000" }}>
+          <p className="mb-6 text-lg" style={{ color: "#D8AFE7" }}>
             Board-Certified Psychiatric Mental Health Nurse Practitioner
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
@@ -833,7 +990,7 @@ export default function HomePage() {
               <div className="p-2 bg-purple-100 rounded-full group-hover:bg-purple-200 transition-colors">
                 <Phone className="h-5 w-5" style={{ color: "#A36ACB" }} />
               </div>
-              <span className="font-medium" style={{ color: "#000" }}>
+              <span className="font-medium" style={{ color: "#D8AFE7" }}>
                 (772) 272-1699
               </span>
             </div>
@@ -841,13 +998,13 @@ export default function HomePage() {
               <div className="p-2 bg-purple-100 rounded-full group-hover:bg-purple-200 transition-colors">
                 <Heart className="h-5 w-5" style={{ color: "#A36ACB" }} />
               </div>
-              <span className="font-medium" style={{ color: "#000" }}>
+              <span className="font-medium" style={{ color: "#D8AFE7" }}>
                 Free 15-minute consultation
               </span>
             </div>
           </div>
-          <p className="text-sm opacity-75" style={{ color: "#000" }}>
-            © 2025 Jeriece LoveIace, PMHNP-BC. All rights reserved.
+          <p className="text-sm opacity-75" style={{ color: "#D8AFE7" }}>
+            © 2024 Jeriece LoveIace, PMHNP-BC. All rights reserved.
           </p>
         </div>
       </footer>
@@ -889,6 +1046,8 @@ export default function HomePage() {
           animation: pulse-slow 4s ease-in-out infinite;
         }
       `}</style>
+
+      <WhatsAppButton />
     </div>
   )
 }
