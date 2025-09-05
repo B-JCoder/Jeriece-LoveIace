@@ -257,10 +257,7 @@ export default function HomePage() {
                   <Shield className="h-5 w-5 text-purple-500" />
                   <span className="text-sm font-medium text-purple-700">8+ Years Experience</span>
                 </div>
-                <div className="flex items-center gap-2 bg-purple-100/50 px-4 py-2 rounded-full">
-                  <Users className="h-5 w-5 text-purple-500" />
-                  <span className="text-sm font-medium text-purple-700">500+ Clients Helped</span>
-                </div>
+              
                 <div className="flex items-center gap-2 bg-purple-100/50 px-4 py-2 rounded-full">
                   <Award className="h-5 w-5 text-purple-500" />
                   <span className="text-sm font-medium text-purple-700">Board Certified</span>
@@ -541,7 +538,7 @@ export default function HomePage() {
       <section id="pricing" className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
-            Transparent Pricing & Plans
+             Pricings
           </h2>
           <p className="text-center text-lg mb-12 max-w-2xl mx-auto" style={{ color: "#000" }}>
             Clear, upfront pricing with flexible payment options to make quality mental healthcare accessible
@@ -582,9 +579,7 @@ export default function HomePage() {
                 <div className="text-4xl font-bold bg-gradient-to-r from-purple-500 to-purple-600 bg-clip-text text-transparent">
                   60 Min
                 </div>
-                <p className="text-sm mt-2" style={{ color: "#000" }}>
-                  Comprehensive 90-minute evaluation
-                </p>
+                
               </CardHeader>
               <CardContent className="relative">
                 <ul className="space-y-3">
@@ -632,9 +627,7 @@ export default function HomePage() {
                 <div className="text-4xl font-bold bg-gradient-to-r from-purple-500 to-purple-600 bg-clip-text text-transparent">
                   15 - 30 Min
                 </div>
-                <p className="text-sm mt-2" style={{ color: "#000" }}>
-                  Standard 45-60 minute sessions
-                </p>
+              
               </CardHeader>
               <CardContent className="relative">
                 <ul className="space-y-3">
@@ -893,7 +886,6 @@ export default function HomePage() {
           {/* Trust Indicators */}
           <div className="grid md:grid-cols-4 gap-6 text-center">
             {[
-              { icon: Users, number: "80+", label: "Clients Helped" },
               { icon: Award, number: "8+", label: "Years Experience" },
               { icon: Star, number: "4.9", label: "Average Rating" },
               { icon: Heart, number: "95%", label: "Client Satisfaction" },

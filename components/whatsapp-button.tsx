@@ -1,7 +1,7 @@
 "use client"
 
 export default function WhatsAppButton() {
-  const phoneNumber = "+17722721699"
+  const phoneNumber = "+1 (786) 853-2864"
   const message = "Hello! I'm interested in learning more about your mental health services."
 
   const handleWhatsAppClick = () => {
