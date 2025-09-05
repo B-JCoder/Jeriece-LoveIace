@@ -706,133 +706,116 @@ export default function HomePage() {
       </section>
 
       {/* Contact Form */}
-      <section id="contact" className="py-16 px-4">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
-            Start Your Journey
-          </h2>
+  <section id="contact" className="py-16 px-4">
+  <div className="max-w-6xl mx-auto">
+    <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
+      Start Your Journey
+    </h2>
 
-          
+    <div className="grid md:grid-cols-2 gap-8 items-center">
+      {/* Left side - Form */}
+      <Card
+        className="shadow-2xl hover:shadow-3xl transition-all duration-500 border-0 relative overflow-hidden"
+        style={{
+          backgroundColor: "rgba(250, 249, 246, 0.95)",
+          backdropFilter: "blur(10px)",
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-400/20 via-purple-500/20 to-purple-600/20 animate-pulse-slow" />
+        <div
+          className="absolute inset-[1px] rounded-lg"
+          style={{ backgroundColor: "rgba(250, 249, 246, 0.95)" }}
+        />
 
-          <Card
-            className="shadow-2xl hover:shadow-3xl transition-all duration-500 border-0 relative overflow-hidden"
-            style={{ backgroundColor: "rgba(250, 249, 246, 0.95)", backdropFilter: "blur(10px)" }}
+        <CardContent className="relative p-8">
+          <form
+            className="space-y-6"
+            action="https://formsubmit.co/admin@asnrentals.com"
+            method="POST"
+            encType="multipart/form-data"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-400/20 via-purple-500/20 to-purple-600/20 animate-pulse-slow" />
-            <div className="absolute inset-[1px] rounded-lg" style={{ backgroundColor: "rgba(250, 249, 246, 0.95)" }} />
+            {/* your existing input fields stay same */}
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="group">
+                <label className="block text-sm font-medium mb-2" style={{ color: "#000" }}>
+                  First Name
+                </label>
+                <Input className="border-2 focus:ring-2 focus:ring-purple-400" />
+              </div>
+              <div className="group">
+                <label className="block text-sm font-medium mb-2" style={{ color: "#000" }}>
+                  Last Name
+                </label>
+                <Input className="border-2 focus:ring-2 focus:ring-purple-400" />
+              </div>
+            </div>
 
-            <CardContent className="relative p-8">
-              <form className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="group">
-                    <label
-                      className="block text-sm font-medium mb-2 group-focus-within:text-purple-600 transition-colors"
-                      style={{ color: "#000" }}
-                    >
-                      First Name
-                    </label>
-                    <Input
-                      className="border-2 focus:ring-2 focus:ring-purple-400 focus:border-purple-400 transition-all duration-300 hover:border-purple-300"
-                      style={{ borderColor: "#D4C3ED" }}
-                    />
-                  </div>
-                  <div className="group">
-                    <label
-                      className="block text-sm font-medium mb-2 group-focus-within:text-purple-600 transition-colors"
-                      style={{ color: "#000" }}
-                    >
-                      Last Name
-                    </label>
-                    <Input
-                      className="border-2 focus:ring-2 focus:ring-purple-400 focus:border-purple-400 transition-all duration-300 hover:border-purple-300"
-                      style={{ borderColor: "#D4C3ED" }}
-                    />
-                  </div>
-                </div>
-                <div className="group">
-                  <label
-                    className="block text-sm font-medium mb-2 group-focus-within:text-purple-600 transition-colors"
-                    style={{ color: "#000" }}
-                  >
-                    Email
-                  </label>
-                  <Input
-                    type="email"
-                    className="border-2 focus:ring-2 focus:ring-purple-400 focus:border-purple-400 transition-all duration-300 hover:border-purple-300"
-                    style={{ borderColor: "#D4C3ED" }}
-                  />
-                </div>
-                <div className="group">
-                  <label
-                    className="block text-sm font-medium mb-2 group-focus-within:text-purple-600 transition-colors"
-                    style={{ color: "#000" }}
-                  >
-                    Phone
-                  </label>
-                  <Input
-                    type="tel"
-                    className="border-2 focus:ring-2 focus:ring-purple-400 focus:border-purple-400 transition-all duration-300 hover:border-purple-300"
-                    style={{ borderColor: "#D4C3ED" }}
-                  />
-                </div>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="group">
-                    <label
-                      className="block text-sm font-medium mb-2 group-focus-within:text-purple-600 transition-colors"
-                      style={{ color: "#000" }}
-                    >
-                      <Calendar className="inline h-4 w-4 mr-1" />
-                      Preferred Date
-                    </label>
-                    <Input
-                      type="date"
-                      className="border-2 focus:ring-2 focus:ring-purple-400 focus:border-purple-400 transition-all duration-300 hover:border-purple-300"
-                      style={{ borderColor: "#D4C3ED" }}
-                    />
-                  </div>
-                  <div className="group">
-                    <label
-                      className="block text-sm font-medium mb-2 group-focus-within:text-purple-600 transition-colors"
-                      style={{ color: "#000" }}
-                    >
-                      <Clock className="inline h-4 w-4 mr-1" />
-                      Preferred Time
-                    </label>
-                    <Input
-                      type="time"
-                      className="border-2 focus:ring-2 focus:ring-purple-400 focus:border-purple-400 transition-all duration-300 hover:border-purple-300"
-                      style={{ borderColor: "#D4C3ED" }}
-                    />
-                  </div>
-                </div>
-                <div className="group">
-                  <label
-                    className="block text-sm font-medium mb-2 group-focus-within:text-purple-600 transition-colors"
-                    style={{ color: "#000" }}
-                  >
-                    Message
-                  </label>
-                  <Textarea
-                    rows={4}
-                    className="border-2 focus:ring-2 focus:ring-purple-400 focus:border-purple-400 transition-all duration-300 hover:border-purple-300 resize-none"
-                    style={{ borderColor: "#D4C3ED" }}
-                    placeholder="Tell me about what brings you here today..."
-                  />
-                </div>
-                <Button
-                  type="submit"
-                  className="w-full text-white font-semibold hover:scale-105 transition-all duration-300 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 shadow-xl hover:shadow-2xl py-4 text-lg relative overflow-hidden group"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
-                  <Mail className="mr-2 h-5 w-5" />
-                  Send Message
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
+            <div className="group">
+              <label className="block text-sm font-medium mb-2" style={{ color: "#000" }}>
+                Email
+              </label>
+              <Input type="email" className="border-2 focus:ring-2 focus:ring-purple-400" />
+            </div>
+
+            <div className="group">
+              <label className="block text-sm font-medium mb-2" style={{ color: "#000" }}>
+                Phone
+              </label>
+              <Input type="tel" className="border-2 focus:ring-2 focus:ring-purple-400" />
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="group">
+                <label className="block text-sm font-medium mb-2" style={{ color: "#000" }}>
+                  Preferred Date
+                </label>
+                <Input type="date" className="border-2 focus:ring-2 focus:ring-purple-400" />
+              </div>
+              <div className="group">
+                <label className="block text-sm font-medium mb-2" style={{ color: "#000" }}>
+                  Preferred Time
+                </label>
+                <Input type="time" className="border-2 focus:ring-2 focus:ring-purple-400" />
+              </div>
+            </div>
+
+            <div className="group">
+              <label className="block text-sm font-medium mb-2" style={{ color: "#000" }}>
+                Message
+              </label>
+              <Textarea
+                rows={4}
+                className="border-2 focus:ring-2 focus:ring-purple-400 resize-none"
+                placeholder="Tell me about what brings you here today..."
+              />
+            </div>
+
+            <Button
+              type="submit"
+              className="w-full text-white font-semibold hover:scale-105 transition-all duration-300 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 shadow-xl hover:shadow-2xl py-4 text-lg relative overflow-hidden group"
+            >
+              <Mail className="mr-2 h-5 w-5" />
+              Send Message
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </form>
+        </CardContent>
+      </Card>
+
+      {/* Right side - Image */}
+      <div className="flex justify-center md:justify-end">
+        <Image
+          src="/images/bottomimg.jpg"
+          alt="Contact Illustration"
+          className="rounded-2xl shadow-2xl max-h-[600px] object-cover"
+          width={500}
+          height={600}
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
 
       <section id="testimonials" className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
@@ -1004,7 +987,7 @@ export default function HomePage() {
             </div>
           </div>
           <p className="text-sm opacity-75" style={{ color: "#000" }}>
-            © 2024 Jeriece LoveIace, PMHNP-BC. All rights reserved.
+            © 2025 Jeriece LoveIace, PMHNP-BC. All rights reserved.
           </p>
         </div>
       </footer>
